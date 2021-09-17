@@ -1,38 +1,655 @@
-.App {
-  text-align: center;
+.img{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    margin-left: -30px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    margin-top: 20px !important;
+   
+}
+@media screen and (max-width:500px) {
+    
+    .sliderbutton{
+        right:2px !important;
+        bottom: 2px !important;
+
+    }
+
+}
+@media screen and (max-width:300px) {
+    
+    .sliderbutton{
+       width:100% !important;
+        bottom: 2px !important;
+
+    }
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (max-width:768px) {
+    .img{
+       margin-top: 30px;
+        width:220px;
+        height:220px;
+    }
+  
+    
+}
+.Button{
+    background:url(./images/button.jpg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button{
+   
+    background:url(./images/button.jpg);
+   
+  
+}
+.button:hover{
+    transform:translateY(2px)
+}
+.a{
+    color:#FEBE10;
+    white-space:nowrap;
+    outline:none;
+    min-width:130px;
+    max-width:200px;
+    border:none;
+    display:flex;
+    text-decoration:none;
+    transition:0.3s;
+    justify-content:center;
+    align-items:center;
+    padding:1rem 1rem;
+}
+.main-heading{
+    padding-top: 60px;
+    margin-left: 470px;
+    font-size:clamp(3rem,6vw,2rem);
+    text-shadow:1.4px 1.4px #006666;
+}
+
+.active{
+    background:url(./images/nav.jpg);
+}
+.notactive{
+    background:black;
+}
+@media screen and (max-width:1050px){
+    .main-heading{
+        margin-left: auto;
+      }
+      .certificateh1{
+        margin-left: auto !important;
+      }
+      .experiencediv h1{
+        margin-left: auto !important;
+      }
+      .experiencediv h2{
+        margin-left: auto !important;
+
+      }
+
+}
+
+
+
+@media screen and (max-width:768px){
+    .second{
+        margin-top: 270px;
+        margin-bottom: 400px;
+    }
+   
+}
+
+
+
+.projectsection img{
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    background: #f0f0f0;
+    box-shadow:  0 0 0 #cccccc,
+                 0 0 0 #ffffff,
+                  10px 10px 10px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+    animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
+    /* animation-fill-mode: forwards; */
+  }
+
+  @keyframes anime {
+    0% {
+      width: 80px;
+      height: 80px;
+      background: #f0f0f0;
+      box-shadow:  0 0 0 #cccccc,
+                   0 0 0 #ffffff,
+                    10px 10px 10px #cccccc inset,
+                    -10px -10px 10px #ffffff inset;
+    }
+    25% {
+      width: 80px;
+      height: 80px;
+      background: #f8f8f8;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+    50% {
+      width: 80px;
+      height: 240px;
+      background: #f8f8f8;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+    100% {
+      width: 480px;
+      height: 240px;
+      background: #fafafa;
+      box-shadow:  40px 40px 40px #cccccc,
+                   0 0 0 #ffffff,
+                   0 0 0 #cccccc inset,
+                   2px 2px 2px #ffffff inset;
+    }
+}
+@media screen and (max-width:500px){
+    .projectsection img{
+       width: 200% !important;
+        height: 100% !important;
+       animation: none !important;
+        margin-left:100px !important;
+      
+      }
+    
+}
+@media screen and (max-width:372px){
+    .projectsection img{
+       width: 140% !important;
+      
+        margin-left:50px !important;
+    }
+    
+}
+@media screen and (max-width:320px){
+    .projectsection img{
+       width: 120% !important;
+        margin-left:0px !important;
+       
+      }
+    
+}
+@keyframes none {}
+
+
+/*certificate*/
+.certificateh1{
+    padding-top: 60px;
+    margin-left: 470px;
+    font-size:clamp(3rem,6vw,2rem);
+    text-shadow:1.4px 1.4px #006666;
+    
+
+}
+.certificatesection img{
+    box-shadow:0px 0px 1px 1px gray;
+    position: relative;
+    width: 144%;
+   
+    height: auto;
+    object-fit: cover;
+}
+.secondleft{
+    margin-top: 200px;
+}
+.secondleft img{
+    position: relative;
+    width: 80%;
+   
+    height: auto;
+}
+
+@media screen and (max-width:768px){
+    .certificatesection img{
+        margin-top:-200px
+    }
+    .secondleft img{
+        margin-top: -350px !important;
+        width:56% !important
+       
+    }
+}
+@media screen and (max-width:590px){
+   
+    .secondleft img{
+        margin-top: -350px !important;
+        width:70% !important
+       
+    }
+}
+
+@media screen and (max-width:420px){
+    .certificatesection p {
+        width:250px !important
+
+    }
+    .projectsection p{
+        width:250px !important
+    }
+}
+
+ 
+@media screen and (max-width:427px){
+   .interncertificate{
+       margin-left: -20px !important;
+     
+   }
+   .certificateh1{
+       margin-bottom: 200px !important;
+   }
+  .istleft button{
+      margin-bottom: 200px !important;
+  }
+  .secondleft img{
+      margin-left: -20px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ @media screen and (max-width:414px){
+   
+  
+   .certificatesection h2{
+    width:250px !important
+}
+ 
+  }
+  @media screen and (max-width:414px){
+   
+  
+    .secondleft img{
+        width:100% !important;
+    }
+    .certificatesection img{
+        width: 100% !important;
+    }
+  
+   }
+ 
+
+/*contact me*/
+
+
+.maindiv{
+    margin-top: 120px;
+    width:680px;
+    height:700px;
+    margin-left: 270px;
+    box-shadow: 0px 0px 6px 6px gray;
+    margin-bottom: 50px;
+  
+    
+
+}
+.contactimg{
+    width:680px;
+    height:330px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background: url(./images/mail.jpg);
+    border-radius: 100px;
+    color: black;
+    line-height: 0;
+   margin-top:-35px;
+   margin-left: 50px;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  .contact__btn{
+    animation: animation 6s ease-in-out;
+   
+    
+   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes animation {
+    0% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: 12%;
+    }
+    100% {
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width:990px){
+    .maindiv{
+        margin-left:150px ;
+    }
+
+}
+@media screen and (max-width:864px){
+    .maindiv{
+        margin-left:50px ;
+    }
+
+}
+@media screen and (max-width:755px){
+    .maindiv{
+        margin-left: auto;
+    }
+   
+
+}
+@media screen and (max-width:680px){
+   .contactimg{
+       width:400px;
+       margin-bottom: 50px !important;
+   }
+   .image{
+       margin-left: -400px;
+   }
+
+    
+
+
+}
+@media screen and (max-width:514px){
+   
+    .contact__btn{
+        margin-left: 0px !important;
+        margin-top:20px;
+    }
+    .maindiv{
+        height: 900px ;
+    }
+    .contact__btn{
+        animation: animation 6s ease-in-out;
+       
+        
+       
+    }
+    
+    @keyframes animation {
+        0% {
+            margin-right: -100%;
+        }
+        50% {
+            margin-right: 100%;
+        }
+        100% {
+            margin-left: 8%;
+        }
+    }
+ 
+     
+ 
+ 
+ }
+ @media screen and (max-width:460px){
+   
+    .contact__btn{
+       
+        font-size: 0.7rem;
+    }
+   
+ 
+     
+ 
+ 
+ }
+ @media screen and (max-width:400px){
+   
+   .contactimg{
+       width:320px !important;
+   }
+   .image{
+    margin-left: -320px;
+}
+.contact__btn{
+    animation: leftoright 6s ease-in-out;
+   
+    
+   
+}
+
+@keyframes leftoright {
+    0% {
+        margin-left: -150%;
+    }
+    50% {
+        margin-left: 8%;
+    }
+    100% {
+        margin-left: 8%;
+    }
+}
+
+     
+ 
+ 
+ }
+
+ /* experience*/
+
+ .experiencediv{
+     background:url(./images/experience.jpg);
+     width:100%;
+     height:950px;
+     background-repeat: no-repeat;
+ }
+ .experiencediv h1{
+    margin-top: 60px;
+    margin-left: 470px;
+    font-size:clamp(3rem,6vw,2rem);
+    text-shadow:1.4px 1.4px #006666;
+    
+ }
+ .experiencediv h2{
+    margin-top: 60px;
+    margin-left: 370px;
+    font-size:clamp(3rem,6vw,2rem);
+    text-shadow:1.4px 1.4px #006666;
+    
+ }
+ .courses p{
+     margin-bottom: 20px;
+     width:500px;
+   
+     margin-left: 300px;
+     
+
+ }
+ .courses p span{
+     font-weight: bold;
+ }
+ .intern{
+     margin-left: 350px;
+     margin-top: 50px;
+     width:500px;
+   
+    
+ }
+ .intern p:hover{
+     box-shadow: 0px 0px 3px 3px cadetblue;
+ }
+ 
+ .intern p{
+     color:black;
+     padding-left: 10px;
+     font-weight: bold;
+ }
+ 
+ .hackclub{
+     margin-left: 350px;
+     margin-top:60px;
+     width: 500px;
+    
+ }
+ .hackclub p{
+    color:black;
+    padding-left: 10px;
+    font-weight: bold;
+    
+}
+.vp{
+    margin-left: 350px;
+    margin-top:60px;
+    width: 500px;
+   
+}
+.vp p{
+   color:black;
+   padding-left: 10px;
+   font-weight: bold;
+   
+}
+.hrsga{
+    margin-left: 70px;
+    margin-top:60px;
+    width: 500px;
+}
+.hrsga p{
+    color:black;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.acm{
+    margin-left: 70px;
+    margin-top:60px;
+    width: 500px;
+}
+.acm p{
+    color:black;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.hackclub p:hover{
+    box-shadow: 0px 0px 3px 3px cadetblue;
+}
+.hrsga p:hover{
+    box-shadow: 0px 0px 3px 3px cadetblue;
+}
+.vp p:hover{
+    box-shadow: 0px 0px 3px 3px cadetblue;
+}
+.acm p:hover{
+    box-shadow: 0px 0px 3px 3px cadetblue;
+}
+@media screen  and (max-width:840px){
+    .intern{
+       width:300px;
+    }
+    .hackclub{
+        width: 300px;
+    }
+    .vp{
+        width: 300px;
+    }
+    .hrsga{
+        width: 300px;
+    }
+    .acm{
+        width: 300px;
+    }
+    .courses p{
+        margin-left: 200px;
+    }
+    .experiencediv{
+        height:1300px !important;
+    }
+}
+
+@media screen  and (max-width:685px){
+    .intern{
+       width:250px;
+    }
+    .hackclub{
+        width: 250px;
+    }
+    .vp{
+        width: 250px;
+    }
+    .hrsga{
+        width: 250px;
+    }
+    .acm{
+        width: 250px;
+    }
+    .courses p{
+        margin-left: 100px;
+    }
+}
+@media screen  and (max-width:600px){
+    .intern{
+       margin-left: 170px !important;
+    }
+    .hackclub{
+        margin-left: 170px !important;
+    }
+    .vp{
+        margin-left: 170px !important;
+    }
+    .courses p{
+        margin-left: 0px;
+    }
+   
+  
+}
+@media screen  and (max-width:490px){
+   
+    .courses p{
+        width:300px
+    }
+   
+  
+}
+@media screen  and (max-width:425px){
+    .intern{
+      margin-left: 100px !important;
+    }
+    .hackclub{
+        margin-left: 100px !important;
+    }
+    .vp{
+        margin-left: 100px !important;
+    }
+    .hrsga{
+       margin-left: 10px !important;
+    }
+    .acm{
+        margin-left: 10px !important;
+    }
+    .experiencediv{
+        height:1300px !important;
+    }
+}
+@media screen  and (max-width:425px){
+    .intern{
+     width:150px !important;
+    }
+    .hackclub{
+        width:150px !important;
+    }
+    .vp{
+        width:150px !important;
+    }
+    .hrsga{
+        width:250px !important;
+    }
+  
+    .experiencediv{
+        height:1600px !important;
+    }
 }
