@@ -84,7 +84,7 @@ export default function Dropdown({isOpen,toggle}) {
             ))}
                 </Dropdownmenu>
                 <BtnWrapper>
-                    <Button big="true" primary="true" to="/contact" style={{color:"white"}}>Contact Me</Button>
+                    <Button to="/contact" className="b" >Contact Me</Button>
                 </BtnWrapper>
             </DropdownWrapper>
         </Dropdowndiv>
